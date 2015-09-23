@@ -16,10 +16,10 @@ In `_config.yml` remember to specify your own data:
     title : My Blog =)
     
     author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+      name : Andre Gatorano
+      email : agatorano@gmail.com
+      github : agatorano
+      twitter : agatorano
 
 The theme should reference these variables whenever needed.
     
