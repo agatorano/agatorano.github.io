@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: DATA LIVES
+tagline: An attempt at creating an interface between Data and Humanity
 ---
 {% include JB/setup %}
 
