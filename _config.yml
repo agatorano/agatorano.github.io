@@ -8,17 +8,19 @@ highlighter: pygments
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
 markdown: kramdown
 
+# bootswatach theme
+bootswatch-theme: cerulean
+
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
 title : Data Lives
 tagline: Site Tagline
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+  name : Andre Gatorano
+  email : agatorano@gmail.com
+  github : agatorano
+  twitter : agatorano
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
