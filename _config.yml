@@ -19,8 +19,7 @@ tagline: Site Tagline
 author :
   name : Andre Gatorano
   email : agatorano@gmail.com
-  github : agatorano
-  twitter : agatorano
+  github : https://github.com/agatorano
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
