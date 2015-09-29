@@ -1,6 +1,6 @@
 ---
 layout: page
-title: DATA LIVES
+title: Andre Meets Data!
 tagline: An attempt at creating an interface between Data and Humanity
 ---
 {% include JB/setup %}
@@ -20,7 +20,7 @@ tagline: An attempt at creating an interface between Data and Humanity
 <h2>Recent Posts</h2>
 {% for post in site.posts offset:1 limit:2 %}
     <a href="{{ post.url }}">
-        <h4>{{ post.title }}</h4>
+        <h5>{{ post.title }}</h5>
     </a>
     <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
     <div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
