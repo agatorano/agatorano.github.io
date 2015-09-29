@@ -17,10 +17,7 @@ tagline: An attempt at creating an interface between Data and Humanity
     <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
     <div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
 {% endfor %}
-
-<br>" "
 <br>
-
 <h2>Recent Posts</h2>
 {% for post in site.posts offset:1 limit:2 %}
     <a href="{{ post.url }}">
@@ -29,10 +26,7 @@ tagline: An attempt at creating an interface between Data and Humanity
     <p class="blogdate">{{ post.date | date: "%d %B %Y" }}</p>
     <div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
 {% endfor %}
-
-<br>" "
 <br>
-
 <h4>All Posts</h4>
 <ul class="posts">
   {% for post in site.posts %}
