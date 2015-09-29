@@ -26,3 +26,7 @@ tagline: An attempt at creating an interface between Data and Humanity
     <div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
 {% endfor %}
 
+<h4>Recent Posts</h4>
+{% for post in site.posts %}
+    {{ post.date | date_to_string }} » {{ post.title }}
+{% endfor %}
