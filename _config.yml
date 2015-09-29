@@ -9,7 +9,7 @@ highlighter: pygments
 markdown: kramdown
 
 # bootswatach theme
-bootswatch-theme: flatly
+bootswatch-theme: journal
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
