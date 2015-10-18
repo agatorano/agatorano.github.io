@@ -1,9 +1,9 @@
 ---
-theme :
-  name : bootswatch
+layout: post
+title: Hello World
+tagline: lets see if this works
 ---
 {% include JB/setup %}
-{% include themes/bootswatch/default.html %}
 
 <p>
 hello world
