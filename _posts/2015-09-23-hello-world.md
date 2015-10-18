@@ -1,8 +1,10 @@
 ---
-layout: post
-title: "Hello World"
-description: ""
-category: 
-tags: []
+theme :
+  name : bootswatch
 ---
 {% include JB/setup %}
+{% include themes/bootswatch/default.html %}
+
+<p>
+hello world
+</p>
