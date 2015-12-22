@@ -58,11 +58,11 @@ I created 4 models for the prediction: Naive Bayes, Decision Trees, Logistic Reg
 
 I then ran learning-curves the first three using over 200,000 points. 
 
-![top stations](/Users/agatorano/Code/METIS/Census_Insurance_Prediction/visualizations/Bournouli_Learning_Curve.png) 
+![top stations](/assets/images/Bournouli_Learning_Curve.png) 
 
-![top stations](/Users/agatorano/Code/METIS/Census_Insurance_Prediction/visualizations/LogisticRegression_Learning_Curve.png) 
+![top stations](/asstes/images/LogisticRegression_Learning_Curve.png) 
 
-![top stations](/Users/agatorano/Code/METIS/Census_Insurance_Prediction/visualizations/DecisonTree_Learning_Curve.png) 
+![top stations](/assets/images/DecisonTree_Learning_Curve.png) 
 
 
 There is quite erratic behavior for both the Naive Bayes and Logistic regression. I believe this is because of the readjustments for new columns added as new data comes in. The Decision tree starts converging around 5000 data points, which is a small fraction of our data. This is a successful result because I was intending to focus on Random Forests as a model. A Random Forest is an ensemble of randomly generated Decision Trees.
@@ -70,16 +70,27 @@ There is quite erratic behavior for both the Naive Bayes and Logistic regression
 Accuracy scores of the models including a Random Forest Classifier:
 
 
-Naive Bayes|Logistic Regression| Decision Trees| Random Forests
+|-----------------+------------+-----------------+----------------|
+| Logistic Regression | Naive Bayes | Decision Trees  | Random Forests  |
+|-----------------|:-----------|:---------------:|---------------:|
+| First body part |Second cell | Third cell      | fourth cell    |
+| Second line     |foo         | **strong**      | baz            |
+| Third line      |quux        | baz             | bar            |
+|-----------------+------------+-----------------+----------------|
+
+|Logistic Regression| Decision Trees| Random Forests
 :---:|:----:|:----:|:----:|
 0.78|0.879|0.865|0.888|
+
+
+
 
 
 These are all fairly good results. The percent of people who had insurance during the year of 2012 was ~82%. This a ~7% gain over a completely overfit solution. 
 
 The advantage in using a Random Forest is that we can pull out the top features that are associated with accuracy. 
 
-![top stations](/Users/agatorano/Code/METIS/Census_Insurance_Prediction/visualizations/top_features.pdf) 
+![top stations](/assets/images/top_features.pdf) 
 
 The first feature is the poverty-income ration. This is a key measure of poverty in the United States. The next obvious ones are age and income. It also appears that the individuals weight is a fairly good indicator of health insurance coverage. 
 
@@ -94,3 +105,11 @@ Through the use of supervised learning algorithms, there is support that we can 
 look at the individuals who were misclassified as having insurance. These people may be a part of an underserved group. 
 
 The power of investigating population data with machine learning tools can not be overstated. The American Community Survey was created to find the best way to distribute resources from the government. We should use every method at our disposal.
+
+|-----------------+------------+-----------------+----------------|
+| Default aligned |Left aligned| Center aligned  | Right aligned  |
+|-----------------|:-----------|:---------------:|---------------:|
+| First body part |Second cell | Third cell      | fourth cell    |
+| Second line     |foo         | **strong**      | baz            |
+| Third line      |quux        | baz             | bar            |
+|-----------------+------------+-----------------+----------------|
