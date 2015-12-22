@@ -47,6 +47,7 @@ First we look at the generalized information. Here we have the charts for the ri
         <td>
             ![top day](/assets/images/top_days.png){ width: 200px; height: 200px }
         </td>
+    </tr>
     <tr>
         <td>
             ![top month](/assets/images/top_months.png) { width: 200px; height: 200px }
