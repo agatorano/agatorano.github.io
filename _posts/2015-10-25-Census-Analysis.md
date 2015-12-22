@@ -79,7 +79,7 @@ These are all fairly good results. The percent of people who had insurance durin
 
 The advantage in using a Random Forest is that we can pull out the top features that are associated with accuracy. 
 
-![top stations](/assets/images/top_features.pdf) 
+![top stations](/assets/images/top_features.png) 
 
 The first feature is the poverty-income ration. This is a key measure of poverty in the United States. The next obvious ones are age and income. It also appears that the individuals weight is a fairly good indicator of health insurance coverage. 
 
