@@ -5,7 +5,7 @@ tagline: lets see if this works
 ---
 {% include JB/setup %}
 
-#MTA project
+<h3>#MTA project</h3>
 
 The subway is the life blood of NYC. Or should I say the veins. We flow through them powering the body of the United State’s most structurally impressive city. Regardless of any potential grievances you may have with your local transit system, it is invaluable to understand it. Lucky for us, New York has made available the subway's (MTA) ridership data online. Hidden within this data is tens of millions of people, hundreds of millions of rides, and the heart of New York beats on and on.
 
@@ -19,7 +19,7 @@ As with any questions involving data, the answers all depend on how deep you are
 
 As an end product, we can confidently say that we need to find when is best for there to be people on the street. Finally, can we create a useful tool to enable them to automatically create best schedules for their teams based on personal schedules? This may be the best final product, although  it may be a bit of a reach with our current resources and time. 
 
-##CLEANING: 
+##CLEANING:
 
 To achieve these first steps it may be wise to augment the data so that it can be analyzed on a per day, per week, and per month basis. With this we can see what are the best times to work in a day, what are the best days to work, and what months are slower or faster than others. 
 
@@ -40,19 +40,10 @@ Now we can move forward with our analysis.
 First we look at the generalized information. Here we have the charts for the ridership per 4-hour interval, per day, per month, as well as a chart for the total ridership of the top 20 stations. The bars for the total of hours represent the sum of the 4 hours prior to the label
 
 
-![top stations](/assets/images/top_stations.png)
-
-
-
-![top hours](/assets/images/top_hours.png)
-
-
-
-![top day](/assets/images/top_days.png)
-
-
-
-![top month](/assets/images//top_months.png)
+General Charts By  | Station/ Hour/ Day/ Month
+------------- | -------------:|
+<img src=/assets/images/top_stations.png height=300 width=300 /> | <img src=/assets/images/top_hours.png height=300 width=300 />
+<img src=/assets/images/top_days.png height=300 width=300 />| <img src=/assets/images/top_months.png height=300 width=300 />
 
 Here we can justify a lot of our current intuition. From 8am-12am and from 6pm-10pm have the highest ridership. This would be for going to and from work, respectively. The weekdays have the most ridership as there are many people coming in for their commute during the week. Spring through the end of summer has a slightly higher ridership then the winter months. Again this makes sense from a tourism perspective. The top 20 stations may appear obvious to some, but it is helpful in clarifying which stations are more viable when not considering just the top 10. Who knows that 125th is higher than canal? You may have a feeling it could be true, but we now have a more concrete picture. 
 
