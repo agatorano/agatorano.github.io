@@ -60,7 +60,7 @@ I then ran learning-curves the first three using over 200,000 points.
 
 ![top stations](/assets/images/Bournouli_Learning_Curve.png) 
 
-![top stations](/asstes/images/LogisticRegression_Learning_Curve.png) 
+![top stations](/assets/images/LogisticRegression_Learning_Curve.png) 
 
 ![top stations](/assets/images/DecisonTree_Learning_Curve.png) 
 
@@ -94,11 +94,3 @@ Through the use of supervised learning algorithms, there is support that we can 
 look at the individuals who were misclassified as having insurance. These people may be a part of an underserved group. 
 
 The power of investigating population data with machine learning tools can not be overstated. The American Community Survey was created to find the best way to distribute resources from the government. We should use every method at our disposal.
-
-|-----------------+------------+-----------------+----------------|
-| Default aligned |Left aligned| Center aligned  | Right aligned  |
-|-----------------|:-----------|:---------------:|---------------:|
-| First body part |Second cell | Third cell      | fourth cell    |
-| Second line     |foo         | **strong**      | baz            |
-| Third line      |quux        | baz             | bar            |
-|-----------------+------------+-----------------+----------------|
