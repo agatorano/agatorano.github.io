@@ -66,16 +66,22 @@ There is quite erratic behavior for both the Naive Bayes and Logistic regression
 Accuracy scores of the models including a Random Forest Classifier:
 
 
-Naive Bayes|: |Logistic Regression|:|Decision Trees|:|Random Forests
-:---:|:--:|:----:|:--:|:----:|:--:|:----:|
-0.78||0.879||0.865||0.888|
+|**Naive Bayes**|
+|---------------|
+|    0.78       |
+|Logistic Regression|
+|0.879|
+|**Decision Trees**|
+|0.865|
+|**Random Forests**|
+|0.88|
 
 
 These are all fairly good results. The percent of people who had insurance during the year of 2012 was ~82%. This a ~7% gain over a completely overfit solution. 
 
 The advantage in using a Random Forest is that we can pull out the top features that are associated with accuracy. 
 
-![top stations](/assets/images/top_features.png) 
+<img src="/assets/images/top_features.png" height="600" width="600"/> 
 
 The first feature is the poverty-income ration. This is a key measure of poverty in the United States. The next obvious ones are age and income. It also appears that the individuals weight is a fairly good indicator of health insurance coverage. 
 
