@@ -42,8 +42,8 @@ First we look at the generalized information. Here we have the charts for the ri
 
 General Charts By  | Station/ Hour/ Day/ Month
 ------------- | -------------:|
-<img src="/assets/images/top_stations.png" height=300 width=300 /> | <img src="/assets/images/top_hours.png" height=300 width=300 />
-<img src="/assets/images/top_days.png" height=300 width=300 />| <img src="/assets/images/top_months.png" height=300 width=300 />
+<img src="andremeetsdata.com/assets/images/top_stations.png" height=300 width=300 /> | <img src="andremeetsdata.com/assets/images/top_hours.png" height=300 width=300 />
+<img src="andremeetsdata.com/assets/images/top_days.png" height=300 width=300 />| <img src="andremeetsdata.com/assets/images/top_months.png" height=300 width=300 />
 
 Here we can justify a lot of our current intuition. From 8am-12am and from 6pm-10pm have the highest ridership. This would be for going to and from work, respectively. The weekdays have the most ridership as there are many people coming in for their commute during the week. Spring through the end of summer has a slightly higher ridership then the winter months. Again this makes sense from a tourism perspective. The top 20 stations may appear obvious to some, but it is helpful in clarifying which stations are more viable when not considering just the top 10. Who knows that 125th is higher than canal? You may have a feeling it could be true, but we now have a more concrete picture. 
 
