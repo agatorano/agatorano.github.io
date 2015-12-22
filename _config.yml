@@ -11,6 +11,9 @@ markdown: kramdown
 # bootswatach theme
 bootswatch-theme: journal
 
+# set base url
+baseurl: /agatorano.github.io
+
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
