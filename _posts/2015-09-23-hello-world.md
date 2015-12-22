@@ -39,7 +39,7 @@ Now we can move forward with our analysis.
 
 First we look at the generalized information. Here we have the charts for the ridership per 4-hour interval, per day, per month, as well as a chart for the total ridership of the top 20 stations. The bars for the total of hours represent the sum of the 4 hours prior to the label
 
-<table>
+<table cellspacing="20">
     <tr>
         <td>
             <p><img src="/assets/images/top_hours.png" alt="top hours" height="300" width="300"/></p>
