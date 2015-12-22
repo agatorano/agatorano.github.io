@@ -70,20 +70,9 @@ There is quite erratic behavior for both the Naive Bayes and Logistic regression
 Accuracy scores of the models including a Random Forest Classifier:
 
 
-|-----------------+------------+-----------------+----------------|
-| Logistic Regression | Naive Bayes | Decision Trees  | Random Forests  |
-|-----------------|:-----------|:---------------:|---------------:|
-| First body part |Second cell | Third cell      | fourth cell    |
-| Second line     |foo         | **strong**      | baz            |
-| Third line      |quux        | baz             | bar            |
-|-----------------+------------+-----------------+----------------|
-
-|Logistic Regression| Decision Trees| Random Forests
-:---:|:----:|:----:|:----:|
-0.78|0.879|0.865|0.888|
-
-
-
+Naive Bayes| |Logistic Regression| |Decision Trees| |Random Forests
+:---:|:--:|:----:|:--:|:----:|:--:|:----:|
+0.78||0.879||0.865||0.888|
 
 
 These are all fairly good results. The percent of people who had insurance during the year of 2012 was ~82%. This a ~7% gain over a completely overfit solution. 
