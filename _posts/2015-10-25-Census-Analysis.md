@@ -89,7 +89,7 @@ The first feature is the poverty-income ration. This is a key measure of poverty
 These results are great in that they make sense and support the idea that our model functioned appropriately. Beyond this we have a challenge of investigating how these features affect our results. The unfortunate quality of getting top features from a Random Forest is that you don’t know which direction they influence. Does being poor or rich associate with having insurance? Maybe it is that the wealthier people can afford the insurance. Maybe the poorer have Medicare. Features like weight are especially interesting. How does the individuals weight affect health care coverage? More interestingly is why? We all can guess. But now we have some results to start guessing over. 
 
 
-TAKE-AWAY
+Take-Away
 ----
 
 Through the use of supervised learning algorithms, there is support that we can identify people at risk of being without health insurance. What is  possibly more interesting is that we can 
