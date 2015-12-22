@@ -51,7 +51,7 @@ First we look at the generalized information. Here we have the charts for the ri
     <tr>
         <td>
             ![top month](/assets/images/top_months.png) { width: 200px; height: 200px }
-        </td
+        </td>
         <td>
             ![top month](/assets/images/top_months.png){ width: 200px; height: 200px }
         </td>
