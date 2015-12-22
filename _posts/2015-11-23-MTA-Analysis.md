@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Hello World
+title: New York, The Subway, The People
 tagline: lets see if this works
 ---
 {% include JB/setup %}
 
-<h3>#MTA project</h3>
+<h4>Subway: New Yorks Beating Heart</h4>
 
 The subway is the life blood of NYC. Or should I say the veins. We flow through them powering the body of the United State’s most structurally impressive city. Regardless of any potential grievances you may have with your local transit system, it is invaluable to understand it. Lucky for us, New York has made available the subway's (MTA) ridership data online. Hidden within this data is tens of millions of people, hundreds of millions of rides, and the heart of New York beats on and on.
 
@@ -19,7 +19,7 @@ As with any questions involving data, the answers all depend on how deep you are
 
 As an end product, we can confidently say that we need to find when is best for there to be people on the street. Finally, can we create a useful tool to enable them to automatically create best schedules for their teams based on personal schedules? This may be the best final product, although  it may be a bit of a reach with our current resources and time. 
 
-##CLEANING:
+<h4>Cleaning The Data:</h4>
 
 To achieve these first steps it may be wise to augment the data so that it can be analyzed on a per day, per week, and per month basis. With this we can see what are the best times to work in a day, what are the best days to work, and what months are slower or faster than others. 
 
@@ -33,13 +33,13 @@ This allows us to investigate a new problem. Some stations collect data on diffe
 
 We then are freed up to add columns for what day of the week it may be and what month it is. This will allow us to look into the data in a more detailed fashion than simply generalizing the data. 
 
-##ANALYSIS:
+<h4>Analysis:</h4>
 
 Now we can move forward with our analysis. 
 
 First we look at the generalized information. Here we have the charts for the ridership per 4-hour interval, per day, per month, as well as a chart for the total ridership of the top 20 stations. The bars for the total of hours represent the sum of the 4 hours prior to the label
 
-<table cellspacing="20">
+<table cellspacing="50">
     <tr>
         <td>
             <p><img src="/assets/images/top_hours.png" alt="top hours" height="300" width="300"/></p>
@@ -62,7 +62,7 @@ Here we can justify a lot of our current intuition. From 8am-12am and from 6pm-1
 
 what is especially helpful is where we can break down our analysis on a per station basis and identify where differences exist. For example it can be seen that Roosevelt Island Station has increased ridership during the weekends, despite the general trend. This is likely because of the interest in local tourism going toward the island, mixed with a relatively low population. 
 
-##CONCLUSION
+<h4>Take-Away</h4>
 
 From here we can see that to most efficiently aid in distributing a street team for marketing purposes, we can both use general trends and per station trends. If we were to create an app to aid in hiring/scheduling, it could take as input: the times available, days availabe, and list of desired stations. You could then use our data to derive a best set of stations for the individual, based on their criteria. With the per-month data you could throttle your hiring rates up or down based on ridership changes. 
 
