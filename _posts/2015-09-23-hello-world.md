@@ -43,18 +43,18 @@ First we look at the generalized information. Here we have the charts for the ri
 <table>
     <tr>
         <td>
-            ![top hours](/assets/images/top_hours.png)
+            <p><img src="/assets/images/top_hours.png" alt="top hours" /></p>
         </td>
         <td>
-            ![top day](/assets/images/top_days.png)
+            <p><img src="/assets/images/top_hours.png" alt="top hours" /></p>
         </td>
     </tr>
     <tr>
         <td>
-            ![top month](/assets/images/top_months.png)
+            <p><img src="/assets/images/top_hours.png" alt="top hours" /></p>
         </td>
         <td>
-            ![top month](/assets/images/top_months.png)
+            <p><img src="/assets/images/top_hours.png" alt="top hours" /></p>
         </td>
     </tr>
 </table>
