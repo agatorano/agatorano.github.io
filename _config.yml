@@ -8,6 +8,8 @@ highlighter: pygments
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
 markdown: kramdown
 
+kramdown:
+    input: GFM
 # bootswatach theme
 bootswatch-theme: journal
 
