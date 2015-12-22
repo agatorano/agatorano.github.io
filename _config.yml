@@ -11,14 +11,7 @@ markdown: redcarpet
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
 
 redcarpet:
-  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
-
-kramdown:
-    auto_ids: true
-    input: GFM
-    toc_levels: 1..6
-    smart_quotes: lsquo,rsquo,ldquo,rdquo
-    use_coderay: false
+  extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
 
 # bootswatach theme
 bootswatch-theme: journal
