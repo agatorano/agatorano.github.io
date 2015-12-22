@@ -5,10 +5,6 @@ tagline: lets see if this works
 ---
 {% include JB/setup %}
 
-
-Why Predict Health Insurance
---------
-
 Increasingly individuals from the United States are aware of the value of health insurance. The percent of individuals without health insurance has been steadily falling from 18% in 2013 to nearly 11% in the beginning of 2015. Before we can even begin to discuss policy, we need to understand the people at risk. Who doesn’t have insurance? How difficult is it to get it to them? What is the problem?
 
 These questions could be purely political or philosophical questions. Or we could turn our eyes toward more rigorous investigation. Using the American Community Survey (ACS), we have access an enormous array of information about millions of Americans. There are over 280 different questions asked. Of these, one is whether the person has health insurance. Instead of asking simple questions about what percentage have insurance, let’s ask what do the other questions tell us about these individuals. I used 2012 data, but the results and investigation are robust to any survey.
@@ -70,7 +66,7 @@ There is quite erratic behavior for both the Naive Bayes and Logistic regression
 Accuracy scores of the models including a Random Forest Classifier:
 
 
-Naive Bayes| |Logistic Regression| |Decision Trees| |Random Forests
+Naive Bayes|: |Logistic Regression|:|Decision Trees|:|Random Forests
 :---:|:--:|:----:|:--:|:----:|:--:|:----:|
 0.78||0.879||0.865||0.888|
 
