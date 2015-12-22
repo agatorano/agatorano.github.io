@@ -41,9 +41,15 @@ First we look at the generalized information. Here we have the charts for the ri
 
 ![top stations](/assets/images/top_stations.png)
 
+
+
 ![top hours](/assets/images/top_hours.png)
 
+
+
 ![top day](/assets/images/top_days.png)
+
+
 
 ![top month](/assets/images//top_months.png)
 
