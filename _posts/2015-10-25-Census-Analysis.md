@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Predicting Health Insurance Coverage
-tagline: lets see if this works
+tagline: What Features Influence Insurance Acquisition
 ---
 {% include JB/setup %}
 
+</br>
 Increasingly individuals from the United States are aware of the value of health insurance. The percent of individuals without health insurance has been steadily falling from 18% in 2013 to nearly 11% in the beginning of 2015. Before we can even begin to discuss policy, we need to understand the people at risk. Who doesn’t have insurance? How difficult is it to get it to them? What is the problem?
 
 These questions could be purely political or philosophical questions. Or we could turn our eyes toward more rigorous investigation. Using the American Community Survey (ACS), we have access an enormous array of information about millions of Americans. There are over 280 different questions asked. Of these, one is whether the person has health insurance. Instead of asking simple questions about what percentage have insurance, let’s ask what do the other questions tell us about these individuals. I used 2012 data, but the results and investigation are robust to any survey.
@@ -69,7 +70,7 @@ Accuracy scores of the models including a Random Forest Classifier:
 |**Naive Bayes**|
 |---------------|
 |    0.78       |
-|Logistic Regression|
+|**Logistic Regression**|
 |0.879|
 |**Decision Trees**|
 |0.865|
@@ -81,7 +82,7 @@ These are all fairly good results. The percent of people who had insurance durin
 
 The advantage in using a Random Forest is that we can pull out the top features that are associated with accuracy. 
 
-<img src="/assets/images/top_features.png" height="600" width="600"/> 
+<img src="/assets/images/top_features.png" height="500" width="600"/> 
 
 The first feature is the poverty-income ration. This is a key measure of poverty in the United States. The next obvious ones are age and income. It also appears that the individuals weight is a fairly good indicator of health insurance coverage. 
 
