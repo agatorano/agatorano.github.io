@@ -65,6 +65,10 @@ Here we can justify a lot of our current intuition. From 8am-12am and from 6pm-1
 
 what is especially helpful is where we can break down our analysis on a per station basis and identify where differences exist. For example it can be seen that Roosevelt Island Station has increased ridership during the weekends, despite the general trend. This is likely because of the interest in local tourism going toward the island, mixed with a relatively low population. 
 
+For the full documentation of the results read the pdf here <a href="/assets/documents/Subway_Publicity_Work_Report.pdf"></a>
+
+it contains dozens of graphs at each resolution (day, week, month, general).
+
 <h4>Take-Away</h4>
 
 From here we can see that to most efficiently aid in distributing a street team for marketing purposes, we can both use general trends and per station trends. If we were to create an app to aid in hiring/scheduling, it could take as input: the times available, days availabe, and list of desired stations. You could then use our data to derive a best set of stations for the individual, based on their criteria. With the per-month data you could throttle your hiring rates up or down based on ridership changes. 
