@@ -4,7 +4,9 @@ title: Predicting Epidemic - A Review of Data Science in Public Health
 tagline: People are Sick and Life is Complicated
 ---
 {% include JB/setup %}
+
 ~
+
 In low income countries, 5 out of the top 10 causes of death are communicable disease. Bacterial infections, malaria, HIV, ebola - the number of lives lost is huge. The cost to the countries affected is measured in billions of dollars. Even in United States, thousands die to the Flu, with the total financial burden exceeding $87 billion dollars in 2003 [1]. Epidemiological and statistical methods have been used to model illness for decades. These can give us fairly accurate ideas of the behavior of a disease. However, data science methods are sorely underdeveloped in the public health world. Only recently have machine learning methods been applied to illness, and even then only in simple ways.
 
 The Challenge
@@ -55,7 +57,7 @@ When comparing the range predicted by the Logistic Regression to the actual rang
 
 I created this illustration to show the complexity, and value, of Dengue Fever prediction.
 
-![top stations](/assets/images/dengue_sketch.png)
+<img src="/assets/images/dengue_sketch.png" height="800" width="600"/>
 
 It aims to show how in order to choose the features for your model, you need to firmly understand the context of the problem. Without a firm understanding of your vector you can not hope to properly predict your illness.
 
