@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Predicting Epidemic
+title: Predicting Epidemic: A Review of Data Science in Publich Health
 tagline: People are Sick and Life is Complicated
 ---
 {% include JB/setup %}
@@ -36,12 +36,12 @@ In 2012 a model was published using twitter data [3]. This paper showed that one
 Here are the words highly associated with each label
 
 
-![top stations](/Users/agatorano/BLOG/agatorano.github.io/assets/images/twitter_words.png) 
+![top stations](/assets/images/twitter_words.png) 
 
 
 They then used this to label tweets. After this a Conditional Random Field through graphs was used as an unsupervised learner.
 
-![top stations](/Users/agatorano/BLOG/agatorano.github.io/assets/images/twitter_predict.png) 
+![top stations](/assets/images/twitter_predict.png) 
 
 We can see that colocation is not a great way to predict on its own. Only observing friends does  a decent, albeit inconsistent job. When they are combined we can see consistent high prediction accuracy for the whole 8 days. They ended up with 94% accuracy. 
 
@@ -55,13 +55,13 @@ Mosquitoes are often associated with Malaria. The devastation that Malaria has c
 
 To model the global range of Dengue Fever, a group used Logistic Regressions to label geographical zone’s susceptibility [5]. They took into consideration average vapor/water pressure, and rainfall.
 
-![top stations](/Users/agatorano/BLOG/agatorano.github.io/assets/images/Dengue_range.png) 
+![top stations](/assets/images/Dengue_range.png) 
 
 When comparing the range predicted by the Logistic Regression to the actual range, it was found to be 87% accurate. The value of this research goes beyond this to project. The meteorological factors used in the prediction into the future, and they could estimate the future range of Dengue Fever. It was estimated that the range of Dengue Fever would increase from encapsulating 35% of the worlds population to 50%. This model’s value is potential incredibly valuable from a policy standpoint. Should the World Health Organization prepare for this increase? Should it begin to distribute resources differently? Data science allows us to consider these options. 
 
 I created this illustration to show the complexity, and value, of Dengue Fever prediction. 
 
-![top stations](/Users/agatorano/BLOG/agatorano.github.io/assets/images/dengue_sketch.png) 
+![top stations](/assets/images/dengue_sketch.png) 
 
 It aims to show how in order to choose the features for your model, you need to firmly understand the context of the problem. Without a firm understanding of your vector you can not hope to properly predict your illness. 
 
@@ -76,13 +76,13 @@ Of all of the bacteria currently common around the world, Cholera may be the mos
 
 A team at Makerere University in Uganda used unsupervised learning algorithms to break the districts of Uganda into 3 clusters [7]. The cluster of the district at highest risk was identified . 
 
-![top stations](/Users/agatorano/BLOG/agatorano.github.io/assets/images/Cholera_Districts.png) 
+![top stations](/assets/images/Cholera_Districts.png) 
 
 You can see that the red zones of high risk are not totally obviously placed. This clustering helps frame the question. 
 
 They then used a Dynamic Bayesian Network to predict the number of Cholera cases one week in advance.
 
-![top stations](/Users/agatorano/BLOG/agatorano.github.io/assets/images/Cholera_predict.png) 
+![top stations](/assets/images/Cholera_predict.png) 
 
 The districts in the risk regions were focused on. They ended up having a 70% accuracy identifying spikes in Cholera cases, although generally overestimated the number of cases. Simply having the ability to estimate a spike is invaluable.
 
