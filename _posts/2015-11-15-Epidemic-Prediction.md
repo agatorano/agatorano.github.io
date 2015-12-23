@@ -61,7 +61,7 @@ When comparing the range predicted by the Logistic Regression to the actual rang
 
 I created this illustration to show the complexity, and value, of Dengue Fever prediction. 
 
-![top stations](/assets/images/dengue_sketch.png) 
+<img src="/Users/agatorano/BLOG/agatorano.github.io/assets/images/dengue_sketch.png" height="800" width="600"/>
 
 It aims to show how in order to choose the features for your model, you need to firmly understand the context of the problem. Without a firm understanding of your vector you can not hope to properly predict your illness. 
 
