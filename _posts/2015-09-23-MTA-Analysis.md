@@ -5,6 +5,7 @@ tagline: How To Look At MTA Data
 ---
 {% include JB/setup %}
 ~
+
 The subway is the life blood of NYC. Or should I say the veins. We flow through them powering the body of the United State’s most structurally impressive city. Regardless of any potential grievances you may have with your local transit system, it is invaluable to understand it. Lucky for us, New York has made available the subway's (MTA) ridership data online. Hidden within this data is tens of millions of people, hundreds of millions of rides, and the heart of New York beats on and on.
 
 In order to drive the investigation of the data, a hypothetical situation was created. The fabricated task is that of acting as consultancy for an imagined Non-profit that is putting on a gala. This gala would be free, and whom ever would give their emails would receive admittance. If this group were to want to market completely based on canvasing New York on the street, where should they be? 
