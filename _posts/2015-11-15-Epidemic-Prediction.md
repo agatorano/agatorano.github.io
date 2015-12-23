@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Predicting Epidemic - A Review of Data Science in Publich Health
+title: Predicting Epidemic - A Review of Data Science in Public Health
 tagline: People are Sick and Life is Complicated
 ---
 {% include JB/setup %}
