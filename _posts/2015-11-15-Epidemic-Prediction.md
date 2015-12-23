@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Predicting Epidemic: A Review of Data Science in Publich Health
+title: Predicting Epidemic - A Review of Data Science in Publich Health
 tagline: People are Sick and Life is Complicated
 ---
 {% include JB/setup %}
-
 ~
 
 In low income countries, 5 out of the top 10 causes of death are communicable disease. Bacterial infections, malaria, HIV, ebola - The amount of lives lost are huge. The cost to the countries affected is measured in billions of dollars. Even in United States thousands die to the Flu, with the total financial burden exceeding $87 billion dollars in 2003 [1]. 
