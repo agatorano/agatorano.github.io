@@ -4,6 +4,7 @@ title: Predicting Epidemic: A Review of Data Science in Publich Health
 tagline: People are Sick and Life is Complicated
 ---
 {% include JB/setup %}
+
 ~
 
 In low income countries, 5 out of the top 10 causes of death are communicable disease. Bacterial infections, malaria, HIV, ebola - The amount of lives lost are huge. The cost to the countries affected is measured in billions of dollars. Even in United States thousands die to the Flu, with the total financial burden exceeding $87 billion dollars in 2003 [1]. 
@@ -61,7 +62,7 @@ When comparing the range predicted by the Logistic Regression to the actual rang
 
 I created this illustration to show the complexity, and value, of Dengue Fever prediction. 
 
-<img src="/assets/images/dengue_sketch.png" height="800" width="600"/>
+<img src="/assets/images/dengue_sketch.png" height="800" width="600"/> 
 
 It aims to show how in order to choose the features for your model, you need to firmly understand the context of the problem. Without a firm understanding of your vector you can not hope to properly predict your illness. 
 
