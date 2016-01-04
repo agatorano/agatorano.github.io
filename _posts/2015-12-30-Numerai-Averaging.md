@@ -242,11 +242,11 @@ So what are our results!? The score will be an Accuracy Score for the voting ens
 ..
 
 |:----------+---------:|
-| Ensemble  | Score |
+| Ensemble    .| Score |
 | ------------- | ------------- |
 | Voting  | 0.530 |
 | Averaging  | 0.543  |
-| Rank Ave  | 0.544 |
+| Rank Average  | 0.544 |
 
 ..
 
