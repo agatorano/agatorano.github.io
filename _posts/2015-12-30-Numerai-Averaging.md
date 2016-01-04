@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Numer.ai and Ensembles: Voting, Averaging, Rank Averaging
+title: Numer.ai and Ensembles - Voting, Averaging, Rank Averaging
 tagline: Helping A Hedge Fund Hedge
 ---
 {% include JB/setup %}
