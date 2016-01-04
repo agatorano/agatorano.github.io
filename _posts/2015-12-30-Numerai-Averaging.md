@@ -38,6 +38,7 @@ I expected there to be the normal amount of clean up duty with this data-set. Re
 
 Looking at the data, there are enormous numbers being thrown around in some of these columns. Scaling was an obvious first step. I used a logistic regression with and without scaled data and found a very noticeable improvement to scaled data. I then used the get_dummies function to get categorical columns. 
 
+
 ~~~
 #read
 datframe = pd.read_csv(path, header=0)
@@ -67,9 +68,11 @@ x_train = train.drop('target', axis=1)
 x_val = val.drop('target', axis=1)
 ~~~
 
+
 In addition to these I tried to find any outliers in the data. I used PCA to visualize and found no obvious outliers.
 
 I then ran elliptical fold outlier detection on the data just to investigate.
+
 
 ~~~
 def outlier_detection(datframe, vis=0):
@@ -100,6 +103,7 @@ def outlier_detection(datframe, vis=0):
     return datframe   
 ~~~
 
+
 After classifying on both the data before outlier detection, and after, there was no noticeable advantage. 
 
 Ultimately this only shows how clean this dataset really is!
@@ -117,13 +121,17 @@ XGBoost is a gradient boosting algorithm used in nearly ever Kaggle winner’s s
 
 Both the Extra Trees algorithm and the Random Forest performed terribly without optimization. Each getting an AUC score of 0.50. After a grid search they performed better then any other algorithm. 
 
-| Classfier  | .  ACC Score | .  AUC Score |
-| ------------- | ------------- | -----|
+
+
+| Classfier  | Accuracy | AUC Score |
+| :------------- | -------------: | -----:|
 | Random Forest  | 0.532  | 0.538
 | Extra Trees  | 0.529  | 0.538
 | Logistic Reg  | 0.524  | 0.535
 | SVM  | 0.532 | 0.537
 | XGBoost  | 0.529  | 0.535
+
+
 
 Each optimized algorithm got about the same results. The lowest accuracy was Logistic Regression, but we can see that the AUC score was quite comparable. This implies less false positives, despite lower overall accuracy. 
 
@@ -135,6 +143,7 @@ When compared to the leader we do not appear so far behind.
 A simple way to improve our model is to ensemble. Ensembles attempt to lower variance through combining the predictions of multiple models. There are many ways to do this, I tried three: democracy based voting, averaging, and rank averaging. 
 
 For each of these models I created a helper function that creates a data frame from each model’s predictions. For voting we need the predictions. For averaging, we need prediction probabilities:
+
 
 ~~~
 def get_prediction_df(model_list, x_val, type='auc'):
@@ -157,19 +166,26 @@ def get_prediction_df(model_list, x_val, type='auc'):
 ~~~
 
 
+
 How voting based ensembles work is fairly intuitive. if 3 out of 5 models label the observation as ‘1’, then it is ‘1’.  It is a majority vote system. Where one algorithm may have mis-stepped, the others may have been inline. The dangers here are if most models make the same mistakes in the same way. This is where the correct answer will be outvoted, by inherent bias in most models. The other is that if models are correct in the same way there will be no advantage.
 
 for example:
 
+
+~~~
 model 1: 010101  3/5
 model 2: 011101   4/5
 model 3: 001010  2/5
 
 voting: 011101   4/5
+~~~
+
 
 if the answer is that all 6 should be ‘1’, the voting model doesn’t improve over your best algorithm! In addition to this only one of the two miss-labeled observations were guessed correctly and that was only by model 3. So clearly there are advantages, and disadvantages to this method. Also, this method only takes accuracy scoring. 
 
 The greatest advantage to this method is if you have a very strong model and weight that model very highly. The strong model votes out all the others, unless the other classifiers are very confident the strong model is incorrect. 
+
+
 
 ~~~
 def voting_ensemble_prediction(model_list, x_val, y_val):
@@ -192,7 +208,9 @@ def voting_ensemble_prediction(model_list, x_val, y_val):
 ~~~
 
 
+
 Averaging is a more nuanced method. It averages the probability scores for each observation between all of your models. You can think of this as smoothing out of the decision boundary of your algorithms. It most explicitly decreases the variance of the models. It finds the average between probability scores with potentially high variance between models. This is much more robust than voting methods.
+
 
 ~~~
 def averaging_ensemble_prediction(model_list, x_val, y_val, ranks=None):
@@ -215,7 +233,9 @@ def averaging_ensemble_prediction(model_list, x_val, y_val, ranks=None):
     return pred_auc
 ~~~
 
+
 What happens when one algorithm has prediction probabilities that are close to 0 and another has probabilities close to 1? There could be huge costs to having the algorithm give greater weight to algorithms with higher prediction probabilities despite having the same overall rank of the result. To get rid of this cost we can first rank the prediction probabilities and then average them. This removes outliers, and high probability generating models. After the ranks are averaged they are normalized between 0 and 1 to match probability predictions. 
+
 
 ~~~
 def rank_averaging_prediction(model_list, x_val, y_val):
@@ -236,13 +256,17 @@ def rank_averaging_prediction(model_list, x_val, y_val):
      averaging_ensemble_prediction(model_list, x_val, y_val, ranks)
 ~~~
 
+
 So what are our results!? The score will be an Accuracy Score for the voting ensemble and an AUC Score for the averaging ensembles. 
+
+
 
 | Ensemble  | .  Score |
 | ------------- | ------------- |
 | Voting  | 0.530 |
 | Averaging  | 0.543  |
 | Rank Average  | 0.544 |
+
 
 
 This is way better!! 
