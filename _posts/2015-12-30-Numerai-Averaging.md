@@ -20,6 +20,8 @@ The Area Under Curve Score, or AUC Score, is an extremely useful - and a bit eso
 Unfortunately, you misclassified 15% of the data. What’s worse is you misclassified every single observation labeled ‘0’. This brings us the the Receiver Operating Characteristic Curve, or ROC curve.
 
 ![top stations](/assets/images/roc_curve.png)
+
+
 https://en.wikipedia.org/wiki/Receiver_operating_characteristic#/media/File:Roccurves.png
 
 This graph plots false positive rate vs. true positive rate. So false positives are when the classifier labels items as ‘1’ when they are a ‘0’. We would have a lot of false positives with our classifier that only labels observations as ‘1’. In fact the false positive rate would be 1.0. The true positive rate would also be 1.0. This feels bad, but how do we quantify this relationship?
