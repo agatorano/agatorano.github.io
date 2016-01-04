@@ -8,9 +8,9 @@ tagline: Helping A Hedge Fund Hedge
 
 In the spirit of the Kaggle revolution, an industrious and risk taking hedge fund put their investments in the hands of the public. A hedge fund at the site http://Numer.ai has spent their time to encrypt their proprietary data and present it to the public as a clean, orderly, and clear classification problem. They even clearly label their observations as either training or validation observations. This is important because of the temporal nature of stock data. Can’t train on the future and classify the past. 
 
-I decided to take this opportunity to investigate some classifiers I haven’t had the chance to look into yet: XGBoost, and ExtraTrees. In addition to this wanted to dabble in more ensemble techniques. In particular I look into averaging and rank averaging. 
+I decided to take this opportunity to investigate some classifiers I haven’t had the chance to look into yet: XGBoost, and ExtraTrees. In addition to this I wanted to dabble in more ensemble techniques. In particular I look into averaging and rank averaging. 
 
-Averaging and Rank Averaging rely on the AUC score measurement. This is also how Numer.ai and most other competitions score your data. So before anything I’ll review the AUC score and the value it holds
+Averaging and Rank Averaging rely on the AUC score measurement. This is also how Numer.ai and most other competitions score your data. So before anything I’ll review the AUC score and the value it holds.
 
  Understanding The AUC score
 -----
@@ -27,7 +27,7 @@ https://en.wikipedia.org/wiki/Receiver_operating_characteristic#/media/File:Rocc
   
 -
 
-This graph plots false positive rate vs. true positive rate. So false positives are when the classifier labels items as ‘1’ when they are a ‘0’. We would have a lot of false positives with our classifier that only labels observations as ‘1’. In fact the false positive rate would be 1.0. The true positive rate would also be 1.0. This feels bad, but how do we quantify this relationship?
+This graph plots false positive rate vs. true positive rate. So false positives are when the classifier labels items as ‘1’ when they are a ‘0’. We would have a lot of false positives with our classifier that only labels observations as ‘1’. In fact the false positive rate would be 1.0. The true positive rate would also be 1.0. This doesn't feel quite right, but how do we quantify this relationship?
 
 Area Under Curve! We calculate the Area Under the Curve of the ROC curve. If both the true positive and false positive rate are 1.0, then the curve is a straight line. This would get us an Area Under the Curve of 0.5. Our AUC score is 0.50!
 
