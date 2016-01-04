@@ -39,7 +39,6 @@ A Quick Cleaning
 I expected there to be the normal amount of clean up duty with this data-set. Really there was little to nothing to worry about. There are 14 numerical columns, 1 categorical column, a validation column that flags for use in training or validation, and a label column (target). 
 
 Looking at the data, there are enormous numbers being thrown around in some of these columns. Scaling was an obvious first step. I used a logistic regression with and without scaled data and found a very noticeable improvement to scaled data. I then used the get_dummies function to get categorical columns. 
-^
   
 ~~~
 #read
@@ -79,7 +78,6 @@ I then ran elliptical fold outlier detection on the data just to investigate.
 After classifying on both the data before outlier detection, and after, there was no noticeable advantage. 
 
 Ultimately this only shows how clean this dataset really is!
-^
 
 
 #General Classification
@@ -96,7 +94,6 @@ Both the Extra Trees algorithm and the Random Forest performed terribly without 
 
 ..
 
-
 |:----------+---------:+----------:|
 | Classfier  | Accuracy | AUC Score |
 | :------------- | -------------: | -----:|
@@ -105,6 +102,7 @@ Both the Extra Trees algorithm and the Random Forest performed terribly without 
 | Logistic Reg  | 0.524  | 0.535
 | SVM  | 0.532 | 0.537
 | XGBoost  | 0.529  | 0.535
+
 ..
 
 
@@ -112,7 +110,6 @@ Both the Extra Trees algorithm and the Random Forest performed terribly without 
 Each optimized algorithm got about the same results. The lowest accuracy was Logistic Regression, but we can see that the AUC score was quite comparable. This implies less false positives, despite lower overall accuracy. 
 
 When compared to the leader we do not appear so far behind. 
-^
 
 
 # Democracy Voting, Averaging and Rank Averaging
@@ -142,6 +139,7 @@ def get_prediction_df(model_list, x_val, type='auc'):
     
     return predictions
 ~~~
+
 ..
 
 
@@ -151,7 +149,6 @@ How voting based ensembles work is fairly intuitive. if 3 out of 5 models label 
 for example:
 ..
 
-
 ~~~
 model 1: 010101  3/5
 model 2: 011101   4/5
@@ -159,14 +156,13 @@ model 3: 001010  2/5
 
 voting: 011101   4/5
 ~~~
+
 ..
 
 
 if the answer is that all 6 should be ‘1’, the voting model doesn’t improve over your best algorithm! In addition to this only one of the two miss-labeled observations were guessed correctly and that was only by model 3. So clearly there are advantages, and disadvantages to this method. Also, this method only takes accuracy scoring. 
 
 The greatest advantage to this method is if you have a very strong model and weight that model very highly. The strong model votes out all the others, unless the other classifiers are very confident the strong model is incorrect. 
-
-..
 ..
 
 ~~~
@@ -188,9 +184,8 @@ def voting_ensemble_prediction(model_list, x_val, y_val):
     
     print(accuracy_score(y_val.as_matrix(), results))
 ~~~
+
 ..
-
-
 
 Averaging is a more nuanced method. It averages the probability scores for each observation between all of your models. You can think of this as smoothing out of the decision boundary of your algorithms. It most explicitly decreases the variance of the models. It finds the average between probability scores with potentially high variance between models. This is much more robust than voting methods.
 
@@ -216,10 +211,11 @@ def averaging_ensemble_prediction(model_list, x_val, y_val, ranks=None):
 
     return pred_auc
 ~~~
+
 ..
 
-
 What happens when one algorithm has prediction probabilities that are close to 0 and another has probabilities close to 1? There could be huge costs to having the algorithm give greater weight to algorithms with higher prediction probabilities despite having the same overall rank of the result. To get rid of this cost we can first rank the prediction probabilities and then average them. This removes outliers, and high probability generating models. After the ranks are averaged they are normalized between 0 and 1 to match probability predictions. 
+
 ..
 
 ~~~
@@ -242,7 +238,7 @@ def rank_averaging_prediction(model_list, x_val, y_val):
 ~~~
 ..
 
-So what are our results!? The score will be an Accuracy Score for the voting ensemble and an AUC Score for the averaging ensembles. 
+So what are our results!? The score will be an Accuracy Score for the voting ensemble and an AUC Score for the averaging ensembles
 ..
 
 |:----------+---------:|
@@ -250,7 +246,7 @@ So what are our results!? The score will be an Accuracy Score for the voting ens
 | ------------- | ------------- |
 | Voting  | 0.530 |
 | Averaging  | 0.543  |
-| Rank Average  | 0.544 |
+| Rank Ave  | 0.544 |
 
 ..
 
