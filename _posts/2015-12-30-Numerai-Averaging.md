@@ -255,3 +255,5 @@ When using the Rank Averaging algorithm on the tournament data, we get an AUC sc
 We can see the benefits of variance reduction using ensembles. This increase in reliability and success can be seen in creating ensembles of many many more models than I used. Some ensembles have hundreds of models within them. 
 
 Next time I would like to experiment with stacking and blending to further increase my scores in prediction. 
+
+Check out full code at github.com/agatorano
