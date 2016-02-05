@@ -97,3 +97,5 @@ Through the use of supervised learning algorithms, there is support that we can 
 look at the individuals who were misclassified as having insurance. These people may be a part of an underserved group. 
 
 The power of investigating population data with machine learning tools can not be overstated. The American Community Survey was created to find the best way to distribute resources from the government. We should use every method at our disposal.
+
+View complete code at https://github.com/agatorano/Census_Insurance_Prediction
