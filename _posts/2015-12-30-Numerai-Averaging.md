@@ -238,3 +238,6 @@ We can see the benefits of variance reduction using ensembles. This increase in 
 Next time I would like to experiment with stacking and blending to further increase my scores in prediction.
 
 Check out full code at github.com/agatorano
+
+
+2016: Andre Gatorano
