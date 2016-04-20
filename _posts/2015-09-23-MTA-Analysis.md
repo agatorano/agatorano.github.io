@@ -75,3 +75,5 @@ From here we can see that to most efficiently aid in distributing a street team 
 
 Regardless of one's intent, investigating the push and pull of the lives that keep New York going is a valuable endevour. One that has the potential to transcend the numbers and reflect the values of the people of New York. Within every increase and decrease in traffic, there is a story. These numbers hold the secret to what keeps the people of New York going. 
 
+
+2015: Andre Gatorano
