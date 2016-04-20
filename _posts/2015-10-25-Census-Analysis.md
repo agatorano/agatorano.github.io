@@ -99,3 +99,6 @@ look at the individuals who were misclassified as having insurance. These people
 The power of investigating population data with machine learning tools can not be overstated. The American Community Survey was created to find the best way to distribute resources from the government. We should use every method at our disposal.
 
 View complete code at https://github.com/agatorano/Census_Insurance_Prediction
+
+
+2016: Andre Gatorano
