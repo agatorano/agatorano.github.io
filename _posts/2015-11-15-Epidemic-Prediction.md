@@ -99,3 +99,6 @@ sources
 5. http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(02)09964-6/abstract?cc=y=
 6. http://www.who.int/gho/epidemic_diseases/cholera/cases_text/en/
 7. http://s3.amazonaws.com/academia.edu.documents/31045188/Mubangizi-ICCIR2009.pdf?AWSAccessKeyId=AKIAJ56TQJRTWSMTNPEA&Expires=1443730443&Signature=hWB6T%2BDdlk6vS39Ohid9RA5YDwA%3D&response-content-disposition=inline
+
+
+2016: Andre Gatorano
